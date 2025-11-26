@@ -5,9 +5,10 @@ return "Hello! Welcome to Git and GitHub Tutorial! Learning is fun!";
 }
  main
 
-//    public static String getWelcomeMessage() {
-//        return "Welcome to Git and GitHub!";
-//    }
+    public static String getTimeMessage() {
+        return "Current time: " + java.time.LocalTime.now();
+    }
+
 
     public static String getDateMessage() {
         return "Today is: " + java.time.LocalDate.now();
@@ -21,7 +22,9 @@ return "Hello! Welcome to Git and GitHub Tutorial! Learning is fun!";
     public static void main(String[] args) {
         System.out.println(getWelcomeMessage());
         System.out.println(getDateMessage());
+        System.out.println(getTimeMessage());
         System.out.println("Learning remote repositories!");
         System.out.println(getGoodbyeMessage());
     }
+
 }
